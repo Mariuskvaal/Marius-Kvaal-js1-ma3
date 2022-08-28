@@ -10,8 +10,9 @@ async function getGames() {
     const array = data.results;
 
     console.log(data);
-
+    
     var gamesContainer = document.querySelector(".container");
+
 
     for(let i = 0; i <= 7; i++) {
         console.log(array[i].name);
