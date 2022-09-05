@@ -19,10 +19,19 @@ async function getGames() {
         console.log(array[i].rating);
         console.log(array[i].tags.length);
 
-        gamesContainer.innerHTML = gamesContainer.innerHTML + "<h4>" + array[i].name + "</h4>" + "<p>" +  array[i].rating + "</p>" + array[i].tags.length;
+        gamesContainer.innerHTML = `<div class=".container">
+                                        <h4>${array[i].name}</h4>
+                                        <p>${array[i].rating}<p>
+                                        <p>${array[i].tags.length}<p>
+                                        
+                                    </div>" `
+                                    
     }
 
 
 }
 
 getGames();  
+
+
+/*gamesContainer.innerHTML + "<h4>" + array[i].name + "</h4>" + "<p>" +  array[i].rating + "</p>" + array[i].tags.length;
